@@ -39,9 +39,9 @@ export const Features = () => {
     <div className={styles.features}>
       <div className={styles.features_box}>
         <div className={styles.all_features}>
-          {featuresArray.map((feature) => (
-            <div className={styles.feature_box}>
-              <Image src={imageCapsules} alt="h" />
+          {featuresArray.map((feature, i) => (
+            <div className={styles.feature_box} key={i}>
+              <Image src={imageCapsules} alt="image" />
               <h4>{feature.name} </h4>
               <p>{feature.text} </p>
             </div>

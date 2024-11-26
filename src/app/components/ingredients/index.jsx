@@ -53,7 +53,7 @@ export const Ingredients = () => {
           <div className={styles.first_row_card}>
             {ingredients1.map((ingredient, index) => (
               <div key={index} className={styles.card}>
-                <Image src={ingredient.image} alt={ingredient.title} />
+                <Image src={ingredient.image} alt="ingredients" />
                 <div className={styles.text}>
                   <h3>{ingredient.title}</h3>
                   <p>{ingredient.description}</p>
@@ -74,7 +74,7 @@ export const Ingredients = () => {
               </div>
             </div>
           ))}
-          <Image src={img6} className={styles.circle_img} />
+          <Image src={img6} className={styles.circle_img} alt="not found" />
         </div>
       </div>
     </div>

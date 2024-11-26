@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className="left">
-        <Image src={img} />
+        <Image src={img} alt="header"/>
       </div>
       <div className="right"></div>
     </header>
