@@ -26,8 +26,8 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.details}>
-        {detailsArray.map((detail) => (
-          <div className={styles.detail_box}>
+        {detailsArray.map((detail,index) => (
+          <div className={styles.detail_box} key={index}>
             <div>
               <Image src={detail.img} alt="not found" />
             </div>
