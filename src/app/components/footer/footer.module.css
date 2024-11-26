@@ -1,0 +1,70 @@
+.footer {
+  width: 100%;
+  height: calc(307 * var(--curr-device-width) / var(--ideal-viewport-width));
+  background-color: #17414f;
+  color: #ffffff;
+  padding: 0 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1vw;
+  color: #ffffffb6;
+  margin-top: 2vw;
+}
+.details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.detail_box {
+  width: calc(400 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(80 * var(--curr-device-width) / var(--ideal-viewport-width));
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #215d72;
+  border-radius: 1vw;
+}
+.detail_box img {
+  height: calc(60 * var(--curr-device-width) / var(--ideal-viewport-width));
+  width: calc(60 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+.detail_box p {
+  font-size: calc(16 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+.img_and_text {
+  width: 100%;
+  display: flex;
+  gap: 6vw;
+}
+.img_and_text p {
+  width: calc(416 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(48 * var(--curr-device-width) / var(--ideal-viewport-width));
+  font-size: calc(12 * var(--curr-device-width) / var(--ideal-viewport-width));
+  line-height: 1.4vw;
+}
+.img_and_text img {
+  width: calc(313 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(64 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+.footer_last_text {
+  font-size: 1vw;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    height: calc(407 * var(--curr-device-width) / var(--ideal-viewport-width));
+  }
+  .img_and_text p {
+    width: calc(616 * var(--curr-device-width) / var(--ideal-viewport-width));
+    height: calc(48 * var(--curr-device-width) / var(--ideal-viewport-width));
+    font-size: calc(
+      22 * var(--curr-device-width) / var(--ideal-viewport-width)
+    );
+    line-height: 1.7vw;
+  }
+  .footer_last_text {
+    font-size: 2vw;
+  }
+}

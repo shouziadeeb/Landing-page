@@ -1,0 +1,11 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: calc(50 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+.header img {
+  width: calc(313.26 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(64 * var(--curr-device-width) / var(--ideal-viewport-width));
+  position: absolute;
+  left: 13%;
+}

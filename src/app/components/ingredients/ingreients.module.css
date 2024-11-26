@@ -1,0 +1,91 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -5vw;
+}
+.better_ingredients_container {
+  width: 75%;
+  height: calc(593 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.better_ingredients_container h2 {
+  font-size: calc(40 * var(--curr-device-width) / var(--ideal-viewport-width));
+  font-weight: bold;
+  color: #17414f;
+}
+.better_ingredients_container h5 {
+  font-size: calc(12 * var(--curr-device-width) / var(--ideal-viewport-width));
+  font-weight: bold;
+  color: #003569;
+}
+
+.better_ingredients_container p {
+  font-size: calc(16 * var(--curr-device-width) / var(--ideal-viewport-width));
+  margin-bottom: 20px;
+  width: calc(360 * var(--curr-device-width) / var(--ideal-viewport-width));
+  color: gray;
+}
+.better_ingredients {
+  width: calc(372 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(226 * var(--curr-device-width) / var(--ideal-viewport-width));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1vw;
+}
+.first_row {
+  width: 100%;
+  display: flex;
+  gap: 1vw;
+}
+.first_row_card {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: calc(300 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(200 * var(--curr-device-width) / var(--ideal-viewport-width));
+  /* padding: 20px; */
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.text {
+  padding: 2vw;
+  z-index: 2;
+}
+.text a {
+  color: #003569;
+  font-weight: bold;
+  font-size: calc(16 * var(--curr-device-width) / var(--ideal-viewport-width));
+  text-transform: uppercase;
+}
+
+.card img {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.circle_img {
+  height: calc(200 * var(--curr-device-width) / var(--ideal-viewport-width));
+  width: calc(100 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+
+.card h3 {
+  font-size: calc(18 * var(--curr-device-width) / var(--ideal-viewport-width));
+  font-weight: bold;
+}
+
+.card p {
+  font-size: calc(14 * var(--curr-device-width) / var(--ideal-viewport-width));
+  margin: 10px 0;
+}

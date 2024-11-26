@@ -1,0 +1,71 @@
+.features {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(
+    calc(-150 * var(--curr-device-width) / var(--ideal-viewport-width))
+  );
+}
+.features .features_box {
+  width: 75%;
+  background-color: #17414f;
+  border-radius: calc(
+    60 * var(--curr-device-width) / var(--ideal-viewport-width)
+  );
+  height: calc(446 * var(--curr-device-width) / var(--ideal-viewport-width));
+
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.all_features {
+  width: calc(1090 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(530 * var(--curr-device-width) / var(--ideal-viewport-width));
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 10px;
+  position: absolute;
+  top: calc(-95 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+
+.feature_box {
+  font-size: calc(10 * var(--curr-device-width) / var(--ideal-viewport-width));
+  width: calc(322 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(248 * var(--curr-device-width) / var(--ideal-viewport-width));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  gap: 5px;
+}
+.feature_box p {
+  font-size: calc(12 * var(--curr-device-width) / var(--ideal-viewport-width));
+  color: rgba(255, 255, 255, 0.64);
+  width: calc(322 * var(--curr-device-width) / var(--ideal-viewport-width));
+  padding: 0 3vw;
+  margin-top: 0.5vw;
+}
+.feature_box h4 {
+  font-size: calc(18 * var(--curr-device-width) / var(--ideal-viewport-width));
+  font-weight: bolder;
+  margin-top: 1.5vw;
+}
+.feature_box img {
+  width: calc(100 * var(--curr-device-width) / var(--ideal-viewport-width));
+  height: calc(100 * var(--curr-device-width) / var(--ideal-viewport-width));
+}
+@media (max-width: 600px) {
+  .features {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0);
+  }
+}
